@@ -79,7 +79,6 @@ export class AuthService {
       if (user) {
         payload = user; // Add other user-related information as needed
         delete payload.password
-        delete payload.id
       }
 
       return payload;
